@@ -1,0 +1,8 @@
+flake8
+flake8-builtins
+flake8-commas
+isort
+flake8-isort
+pep8-naming
+pytest
+pytest-runner
