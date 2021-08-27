@@ -1,7 +1,8 @@
-0.0.00 (unreleased)
+0.00.0 (2021-08-27)
 -------------------
 
-- Nothing changed yet.
+- dodany generator ziobver
+- dodany parser semver do ziobver
 
 
 0.0.0 (2021-07-25)

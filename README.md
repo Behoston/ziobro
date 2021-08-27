@@ -1,6 +1,6 @@
 # Ziobro.py
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![License: Bereware](https://img.shields.io/badge/License-Bereware-green.svg)](./LICENSE)
 [![Actions Status](https://github.com/Behoston/ziobro/workflows/Test/badge.svg)](https://github.com/Behoston/ziobro/actions?query=workflow%3ATest)
 [![Wheel Status](https://img.shields.io/pypi/wheel/ziobro)](https://pypi.python.org/pypi/ziobro/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/ziobro)](https://pypi.python.org/pypi/ziobro/)
@@ -8,6 +8,8 @@
 [![Latest version](https://img.shields.io/pypi/v/ziobro)](https://pypi.python.org/pypi/ziobro/)
 
 **Pakiet zrobiony dla beki, nie ma na celu obrażać nikogo, jest tylko followupem do przeterminowanych już memów.**
+
+Jeśli ktoś mimo wszystko czuje się urażony, proszę o założenie issue.
 
 ## Przykłady użycia
 
@@ -115,6 +117,37 @@ print((ziobro + ziobro) * ziobro - ziobro / (ziobro ** ziobro))
 
 `>>> 0.0`
 
+### Wersja
+
+Aby dowiedzieć się więcej, przeczytaj [informacje o konwencji wersjonowania](#wersjonowanie). Dla wygodnej przesiadki z
+przestarzałego już semantycznego wersjonowania do biblioteki został dodany generator oraz parser do
+formatu `ziobver - gdzie liczy się ilość zer!`.
+
+```python
+from ziobro.version import ziobro
+
+ziobro(2, 8, 1)
+ziobro(2, 1)
+
+```
+
+```
+>>> '000.000000000.00'
+>>> '000.00.0'
+```
+
+```python
+from ziobro.version import to_ziobro
+
+to_ziobro('3.11')
+to_ziobro('4.1.5')
+```
+
+```
+>>> '0000.000000000000.0'
+>>> '00000.00.000000'
+```
+
 ## Wersjonowanie
 
 Pakiet korzysta z autorskiej odmiany [wersjonowania semantycznego](https://semver.org/lang/pl/) zaproponowanego przez
@@ -140,5 +173,5 @@ prace nad opracowaniem pełnej dokumentacji zgodnej z najlepszymi światowymi st
    from ziobro.func import ziobro as ziobro_f
    from ziobro.exit import ziobro as ziobro_e
    ```
-2. Wersjonowanie pakietu jest okrutne, prawdopodobnie żadne narzędzie do podbijania wersji zależności nie ogarnie. 
-   Tak samo, jak zestreleaser, którego używam do releasowania.
+2. Wersjonowanie pakietu jest okrutne, prawdopodobnie żadne narzędzie do podbijania wersji zależności nie ogarnie. Tak
+   samo, jak zestreleaser, którego używam do releasowania.

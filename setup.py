@@ -23,7 +23,7 @@ with open(path.join(this_directory, 'test_requirements.txt')) as f:
 setup(
     name='ziobro',
     packages=find_packages(exclude=['tests']),
-    version='0.0.00.dev0',
+    version='0.00.0',
     url='https://github.com/Behoston/ziobro',
     license='THE BEER-WARE LICENSE',
     author='Behoston',
@@ -38,7 +38,7 @@ setup(
     platforms='any',
     python_requires='>=2.7',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Environment :: Other Environment',
         'Intended Audience :: Education',
         'Intended Audience :: Developers',
